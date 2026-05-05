@@ -5,5 +5,6 @@ on:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
-    - uses: actions/checkout@v4
-    - uses: docker/setup-buildx-action@v4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v4
